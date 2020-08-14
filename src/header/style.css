@@ -1,0 +1,35 @@
+.globalHeader {
+    background: #1f3764;
+}
+.pageContainer {
+    display: flex;
+}
+.pageContainer > div {
+    flex: 1 0 0;
+}
+.logo {
+    margin: 0.5rem 1rem;
+    text-align: left;
+}
+.logo img{
+    max-width: 70px;
+    vertical-align: bottom;
+}
+.searchField {
+    text-align: right;
+}
+.searchField input {
+    border: 1px solid transparent;
+    color: #c35910;
+    font-size: 18px;
+    margin: 1rem;
+    padding: 1rem;
+}
+.searchField input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: var(--theme-secondary);
+  }
+@media only screen and (min-width: 760px) {
+    .searchField input {
+        min-width: 300px;
+    }
+}

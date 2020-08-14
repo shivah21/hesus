@@ -1,24 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-
+import { Header } from './header';
+import { Section } from './section';
+import { getData } from './API';
+const data = getData();
+export const RootContext = React.createContext(data);
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <RootContext.Provider value={data}>
+        <Header />
+        <Section />
+      </RootContext.Provider>
     </div>
   );
 }

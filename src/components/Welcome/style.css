@@ -1,0 +1,19 @@
+.greeting {
+    background: #b3c8e7;
+}
+.greeting span {
+    font-weight: 400;
+}
+.aboutUs {
+    background: #d0cece;
+}
+.borderTop {
+    border-top: 5px solid var(--theme-primary);
+}
+.introSection h2 {
+  padding: 0 1rem 1rem;
+}
+.container {
+    margin: 1rem 0;
+    padding: 1rem;
+}

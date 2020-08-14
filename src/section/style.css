@@ -1,0 +1,23 @@
+section .wrapper {
+    flex: 1 0 0;
+}
+
+.separator {
+    display: none;
+}
+
+.wrapper {
+    padding: 1rem;
+}
+
+@media only screen and (min-width: 760px) {
+    section {
+        display: flex;
+    }
+    .separator {
+        border-right: 1px solid red;
+    }
+    .wrapper {
+        margin: 0 1rem;
+    }
+}
